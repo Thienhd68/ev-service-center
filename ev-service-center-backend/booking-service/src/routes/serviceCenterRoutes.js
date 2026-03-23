@@ -16,5 +16,3 @@ router.put('/:id', updateServiceCenter);
 router.delete('/:id', deleteServiceCenter);
 
 export default router;
-
-
