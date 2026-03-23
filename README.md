@@ -1,12 +1,12 @@
-# Môn học: Xây dựng phần mềm Hướng Đối Tượng
-# Giao viên hướng dẫn: Nguyen Van Chien
-# Nhóm Ngọc Trâm: 
+# Môn học: Kiểm thử phần mềm
+# Giao viên hướng dẫn: Nguyễn Văn Chiến
+# Nhóm Nguyễn Tuấn Cường: 
  Thành viên:
-  - Nguyễn Thị Ngọc Trâm   (NT)
-  - Nguyễn Thị Thùy TRang
-  - Nguyễn Tuấn Cường
+  - Nguyễn Tấn Cường (NT)
+  - Nguyễn Thị Thùy Trang
+  - Huỳnh Duy Thiện
   - Lê Thế Khang
-  - Lê Gia Bảo
+  - Võ Anh Quốc
 
 # Hệ Thống Quản Lý Trung Tâm Dịch Vụ Xe Điện (EV Service Center Management)
 Đây là một hệ thống quản lý toàn diện dành cho các Gara/Trung tâm bảo dưỡng xe điện, được xây dựng dựa trên kiến trúc Microservices hiện đại và Event-Driven Architecture. Hệ thống bao gồm đầy đủ các phân hệ từ đặt lịch, quản lý kho, phiếu sửa chữa đến tài chính.
