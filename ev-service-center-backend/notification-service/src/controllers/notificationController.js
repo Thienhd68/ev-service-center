@@ -39,7 +39,7 @@ export const getNotifications = async (req, res) => {
       whereClause.status = req.query.status;
     }
     
-    // Filter by userId
+  
     if (req.query.userId) {
       whereClause.userId = req.query.userId;
     }
