@@ -34,7 +34,7 @@ export const getNotifications = async (req, res) => {
     // Build where clause based on filters
     const whereClause = {};
     
-    // Filter by status
+
     if (req.query.status) {
       whereClause.status = req.query.status;
     }
