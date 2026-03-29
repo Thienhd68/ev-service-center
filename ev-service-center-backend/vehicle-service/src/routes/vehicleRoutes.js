@@ -1,4 +1,5 @@
 import express from 'express';
+import { authenticate } from '../middlewares/authMiddlewares.js';
 import {
   getAllVehicles,
   getVehicleById,
@@ -12,15 +13,17 @@ import {
 
 const router = express.Router();
 
-router.get('/', getAllVehicles);
-router.get('/user/:userId', getVehiclesByUserId);
-router.get('/:id', getVehicleById);
-router.post('/', createVehicle);
-router.put('/:id', updateVehicle);
-router.delete('/:id', deleteVehicle);
+// Áp dụng cho toàn bộ route bên dưới nếu muốn bảo mật tất cả
+// router.use(authenticate); 
 
-// Reminder endpoints
-router.post('/:vehicle_id/reminders', addReminder);
-router.get('/:vehicle_id/reminders', getReminders);
+router.get('/', authenticate, getAllVehicles);
+router.get('/user/:userId', authenticate, getVehiclesByUserId);
+router.get('/:id', authenticate, getVehicleById);
+router.post('/', authenticate, createVehicle);
+router.put('/:id', authenticate, updateVehicle);
+router.delete('/:id', authenticate, deleteVehicle);
+
+router.post('/:vehicle_id/reminders', authenticate, addReminder);
+router.get('/:vehicle_id/reminders', authenticate, getReminders);
 
 export default router;
